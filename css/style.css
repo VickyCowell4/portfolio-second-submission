@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  background-size: cover;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 125vh;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 80px;
+  padding: 30px;
+}
+
+header img {
+  height: 80px;
+  max-width: 50%;
+}
+
+header {
+  align-items: center;
+  background-color: #b200ed;
+  border-color: blueviolet;
+  border-style: double;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-img {
+  width: 50%;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  justify-content: space-between;
+  margin-right: 50px;
+  padding: 10px;
+}
+
+main {
+  background-color: lightgray;
+  color: whitesmoke
+}
+
+#hero-banner {
+  display: flex;
+  /* flex-grow: 1; */
+justify-content: space-evenly;
+}
+
+#about-me {
+  background-color: lightskyblue;
+  border-color: darkcyan;
+  border-style: double;
+  color: whitesmoke;
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  text-indent: 1.5em;
+  text-wrap: balance;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.card-project {
+  background-color: lightskyblue;
+  border-color: darkcyan;
+  border-style: double;
+  padding: 40px;
+  text-align: center;
+}
+
+.card-row {
+  display: flex
+}
+
+/* .card-project-two {
+  background-color: lightskyblue;
+  border-color: darkcyan;
+  border-style: double;
+  display: flex;
+  padding: 40px;
+  text-align: left;
+}
+
+.card-project-three {
+  background-color: lightskyblue;
+  border-color: darkcyan;
+  border-style: double;
+  display: flex;
+  padding: 40px;
+  text-align: left;
+}
+
+.card-project-four {
+  background-color: lightskyblue;
+  border-color: darkcyan;
+  border-style: double;
+  display: flex;
+  padding: 40px;
+  text-align: left;
+} */
+
+h1 {
+  margin-right: auto;
+  text-indent: 1.5em;
+}
+
+.page-section-contact {
+  background-color: lightskyblue;
+  border-color: darkcyan;
+  border-style: double;
+  font-size: larger;
+  font-weight: bold;
+  padding: 40px;
+}
+
+footer {
+  background-color: aquamarine;
+  border-color: darkcyan;
+  border-style: double;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+}
