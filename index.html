@@ -88,11 +88,27 @@
     <section class="page-section-contact" id="contact-me">
       <h2>Contact Me</h2>
       <form>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message">
+          </textarea> 
+        </div>
+        <div>
+        <button type="submit">Submit</button>
+        </div>
       </form>
     </section>
   </main>
   <footer>
-    <span>Powered by <i class="fa-duotone fa-heart"></i> HTML and CSS</span>
+    <span>Powered by HTML and CSS</span>
   </footer>
 </body>
 

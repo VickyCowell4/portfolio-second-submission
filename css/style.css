@@ -145,6 +145,11 @@ h1 {
   padding: 40px;
 }
 
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
 footer {
   background-color: aquamarine;
   border-color: darkcyan;
