@@ -11,6 +11,7 @@ body {
   margin: 0;
   margin-top: 80px;
   padding: 30px;
+  width: 100%;
 }
 
 header img {
@@ -29,9 +30,12 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
+  min-width: 90%;
 }
 
 .hero-img {
+  height: fit-content;
+  margin-left: 20px;
   width: 50%;
 }
 
@@ -101,35 +105,12 @@ justify-content: space-evenly;
 }
 
 .card-row {
-  display: flex
-}
-
-/* .card-project-two {
-  background-color: lightskyblue;
-  border-color: darkcyan;
-  border-style: double;
   display: flex;
-  padding: 40px;
-  text-align: left;
 }
-
-.card-project-three {
-  background-color: lightskyblue;
-  border-color: darkcyan;
-  border-style: double;
-  display: flex;
-  padding: 40px;
-  text-align: left;
+.projectsIMG{
+  width: 200px;
+  height: 200px;
 }
-
-.card-project-four {
-  background-color: lightskyblue;
-  border-color: darkcyan;
-  border-style: double;
-  display: flex;
-  padding: 40px;
-  text-align: left;
-} */
 
 h1 {
   margin-right: auto;
@@ -159,4 +140,50 @@ footer {
   margin-bottom: 20px;
   margin-top: 20px;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 601px) {
+
+}
+
+@media only screen and (max-width: 780px) {
+.cards-container {
+flex-direction: column;
+}
+
+}
+
+@media only screen and (max-width: 865px){
+
+  li{
+    margin-right: 20px;
+  }
+  h1{
+    text-indent: none;
+    font-size: 22px;
+  }
+  header {
+    min-width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (max-width: 1400px) {
+.cards-container{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.card-project{
+  padding: 15px;
+}
 }
