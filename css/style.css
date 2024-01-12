@@ -6,37 +6,29 @@ body {
   background-color: lightgray;
   background-size: cover;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  height: 125vh;
   line-height: 1.5;
   margin: 0;
-  margin-top: 80px;
-  padding: 30px;
-  width: 100%;
-}
-
-header img {
-  height: 80px;
-  max-width: 50%;
+  padding: 15px;
 }
 
 header {
-  align-items: center;
   background-color: #b200ed;
   border-color: blueviolet;
   border-style: double;
   display: flex;
-  height: 100px;
-  justify-content: space-between;
+  flex-direction: column;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  min-width: 90%;
+  margin: 0 0 20px;
+  padding: 20px;
+}
+
+#hero-banner {
+  overflow: hidden;
 }
 
 .hero-img {
-  height: fit-content;
-  margin-left: 20px;
-  width: 50%;
+  height: 400px;
+  width: max-content;
 }
 
 nav ul li a {
@@ -46,7 +38,9 @@ nav ul li a {
 
 ul {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: column; */
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -54,7 +48,6 @@ li {
   font-size: larger;
   font-weight: bold;
   justify-content: space-between;
-  margin-right: 50px;
   padding: 10px;
 }
 
@@ -65,8 +58,7 @@ main {
 
 #hero-banner {
   display: flex;
-  /* flex-grow: 1; */
-justify-content: space-evenly;
+  flex-direction: column;
 }
 
 #about-me {
@@ -77,19 +69,17 @@ justify-content: space-evenly;
   display: flex;
   font-size: larger;
   font-weight: bold;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  margin: 20px 0;
+  padding: 20px;
   text-indent: 1.5em;
   text-wrap: balance;
 }
 
 .cards-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 30px;
   margin-top: 30px;
@@ -113,8 +103,8 @@ justify-content: space-evenly;
 }
 
 h1 {
-  margin-right: auto;
-  text-indent: 1.5em;
+
+  margin: 0 0 20px;
 }
 
 .page-section-contact {
@@ -128,6 +118,7 @@ h1 {
 
 form {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -142,48 +133,27 @@ footer {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-
-}
-
-@media only screen and (min-width: 601px) {
-
-}
-
-@media only screen and (max-width: 780px) {
-.cards-container {
-flex-direction: column;
-}
-
-}
-
-@media only screen and (max-width: 865px){
-
-  li{
-    margin-right: 20px;
+@media only screen and (min-width: 768px) {
+  .cards-container {
+    flex-direction: column;
   }
-  h1{
-    text-indent: none;
-    font-size: 22px;
+  ul {
+    flex-direction: row;
   }
-  header {
-    min-width: 90%;
+  
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards-container{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
   }
+  .card-project{
+    padding: 15px;
+  }
+  
 }
 
-@media only screen and (min-width: 992px) {
-
-}
-
-@media only screen and (max-width: 1400px) {
-.cards-container{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-bottom: 0;
-  flex-wrap: wrap;
-justify-content: space-evenly;
-}
-.card-project{
-  padding: 15px;
-}
-}
