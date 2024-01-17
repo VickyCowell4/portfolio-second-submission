@@ -38,7 +38,7 @@ nav ul li a {
 
 ul {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
@@ -67,12 +67,12 @@ main {
   border-style: double;
   color: whitesmoke;
   display: flex;
-  font-size: larger;
+  font-size: large;
   font-weight: bold;
   flex-direction: column;
   justify-content: center;
-  margin: 20px 0;
-  padding: 20px;
+  margin: 0px 0;
+  padding: 0 20px;
   text-indent: 1.5em;
   text-wrap: balance;
 }
@@ -133,6 +133,8 @@ footer {
   text-decoration: none;
 }
 
+
+
 @media only screen and (min-width: 768px) {
   .cards-container {
     flex-direction: column;
@@ -154,6 +156,8 @@ footer {
   .card-project{
     padding: 15px;
   }
-  
+  #hero-banner {
+    flex-direction: column;
+  }
 }
 
